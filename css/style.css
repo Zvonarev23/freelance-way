@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  max-width: 1366px;
+  color: #202020;
+  margin: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+}
+
+.header-container {
+  margin: auto;
+  max-width: 1137px;
+  display: flex;
+  justify-content: space-between;
+  padding: 11px 0;
+}
+
+.logo {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.nav-link {
+  margin: 0 11px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.account {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero {
+  padding-top: 62px;
+  padding-bottom: 71px;
+  display: flex;
+}
+
+.hero-container {
+  max-width: 1137px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.hero-image {
+  margin-right: 123px;
+}
+
+.author {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 22px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 54px;
+  font-weight: 700;
+}
+
+.subtitle {
+  max-width: 355px;
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 48px;
+}
+
+.heart {
+  width: 26px;
+  height: 23px;
+}
+
+.info {
+  max-width: 520px;
+}
+
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 49px;
+}
+
+.type {
+  flex-basis: 38%;
+}
+
+.date {
+  flex-basis: 38%;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.cost {
+  margin-right: 64px;
+  font-size: 55px;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.favorites {
+  display: flex;
+  align-items: center;
+}
+
+.add {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.heart {
+  margin-right: 7;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-read {
+  width: 250px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #f89c02;
+  border: transparent;
+  border-radius: 5px;
+}
+
+.button-buy {
+  width: 250px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #f89c02;
+  border: 2px solid #f89c02;
+  border-radius: 5px;
+  background: transparent;
+}
