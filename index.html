@@ -1,10 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Книга - Путь фрилансера</title>
+    <title>Путь фрилансера</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body></body>
+  <body class="body">
+    <header class="header">
+      <div class="header-container">
+        <span class="logo">Книжный</span>
+        <nav class="nav">
+          <a href="#" class="nav-link">Бестселлеры</a>
+          <a href="#" class="nav-link">Подборки</a>
+          <a href="#" class="nav-link">Авторы</a>
+          <a href="#" class="nav-link">Дайджест</a>
+          <a href="#" class="nav-link">Подписка</a>
+          <a href="#" class="nav-link">Выбор редакции</a>
+        </nav>
+        <a href="#" class="account">Личный кабинет</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-container">
+        <img
+          src="./img/book.jpg"
+          alt="Книга - Путь фрилансера"
+          class="hero-image"
+        />
+
+        <div class="info">
+          <span class="author">Артем Исламов</span>
+          <h1 class="title">Путь фрилансера</h1>
+          <span class="subtitle">Поколение людей, работающих в интернете</span>
+
+          <div class="description">
+            <span class="description-text date">Год выпуска: 2019</span>
+            <span class="description-text format"
+              >Формат издания: 145х2015</span
+            >
+            <span class="description-text type">Тип обложки: мягкая</span>
+            <span class="description-text age"
+              >Возрастные ограничения: 12+</span
+            >
+          </div>
+
+          <div class="price">
+            <span class="cost">490 ₽</span>
+            <div class="favorites">
+              <img
+                src="./img/heart.svg"
+                alt="Добавить в избранное"
+                class="heart"
+              />
+              <span class="add">Добавить в избранное</span>
+            </div>
+          </div>
+
+          <div class="buttons">
+            <button class="button-read">Читать отрывок</button>
+            <button class="button-buy">Купить книгу</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
