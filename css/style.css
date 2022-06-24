@@ -2,11 +2,19 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "MuseoCyrl-900";
+  src: url("../fonts/MuseoCyrl-900.woff") format("woff"),
+    url("../fonts/MuseoCyrl-900.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
 .body {
   max-width: 1366px;
   color: #202020;
   margin: auto;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .header {
@@ -74,8 +82,9 @@
 .title {
   margin-top: 0;
   margin-bottom: 15px;
+  font-family: "MuseoCyrl-900";
+  font-weight: 900;
   font-size: 54px;
-  font-weight: 700;
 }
 
 .subtitle {
