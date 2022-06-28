@@ -1,24 +1,35 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-.body {
-  max-width: 1366px;
+@font-face {
+  font-family: "MuseoCyrl-900";
+  src: url("../fonts/MuseoCyrl-900.woff") format("woff"),
+    url("../fonts/MuseoCyrl-900.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
   color: #202020;
-  margin: auto;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .header {
+  padding: 11px 0;
   background-color: #f1f1f1;
 }
 
-.header-container {
-  margin: auto;
+.container {
   max-width: 1137px;
+  margin: 0 auto;
+}
+
+.header-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 11px 0;
 }
 
 .logo {
@@ -28,7 +39,6 @@
 }
 
 .nav {
-  font-family: inherit;
   font-size: 14px;
   font-weight: 400;
 }
@@ -36,14 +46,13 @@
 .nav-link {
   margin: 0 11px;
   text-decoration: none;
-  color: inherit;
+  color: #202020;
 }
 
 .account {
-  font-family: inherit;
   font-size: 14px;
   font-weight: 400;
-  color: inherit;
+  color: #202020;
   text-decoration: none;
 }
 
@@ -53,19 +62,17 @@
   display: flex;
 }
 
-.hero-container {
-  max-width: 1137px;
-  margin: auto;
+.hero-wrapper {
   display: flex;
   align-items: center;
 }
 
 .hero-image {
-  margin-right: 123px;
+  margin-right: 122px;
 }
 
 .author {
-  display: inline-block;
+  display: block;
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 22px;
@@ -74,8 +81,9 @@
 .title {
   margin-top: 0;
   margin-bottom: 15px;
+  font-family: "MuseoCyrl-900";
+  font-weight: 900;
   font-size: 54px;
-  font-weight: 700;
 }
 
 .subtitle {
@@ -89,10 +97,6 @@
 .heart {
   width: 26px;
   height: 23px;
-}
-
-.info {
-  max-width: 520px;
 }
 
 .description {
@@ -127,6 +131,9 @@
 .favorites {
   display: flex;
   align-items: center;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
 }
 
 .add {
@@ -135,23 +142,20 @@
 }
 
 .heart {
-  margin-right: 7;
-}
-
-.buttons {
-  display: flex;
-  justify-content: space-between;
+  margin-right: 7px;
 }
 
 .button-read {
   width: 250px;
   height: 60px;
+  margin-right: 20px;
   font-size: 16px;
   font-weight: 700;
   color: #ffffff;
   background-color: #f89c02;
   border: transparent;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .button-buy {
@@ -163,4 +167,105 @@
   border: 2px solid #f89c02;
   border-radius: 5px;
   background: transparent;
+  cursor: pointer;
+}
+
+.about {
+  background-color: #f1f1f1;
+  padding: 95px 0;
+  display: flex;
+}
+
+.about-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.about-text {
+  max-width: 455px;
+  margin-right: 130px;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.title-about {
+  margin-bottom: 35px;
+}
+
+.summary {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.about-author {
+  padding: 68px 53px;
+  max-width: 552px;
+  border: 1px solid #f3f3f3;
+  box-shadow: 0px 1px 120px 0px rgba(161, 161, 161, 0.07);
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 27px;
+}
+
+.author-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 21px;
+}
+
+.author-text {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 300px;
+}
+
+.author-name {
+  margin: 0;
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.author-link {
+  text-decoration: none;
+  color: #202020;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.author-bio {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.readers {
+  padding-top: 57px;
+  padding-bottom: 109px;
+}
+
+.title-readers {
+  margin-bottom: 57px;
+}
+
+.readers-photos {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.photo {
+  width: 165px;
+  height: 165px;
+  object-fit: cover;
 }
