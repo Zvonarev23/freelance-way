@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -25,7 +27,7 @@ body {
   margin: auto;
 }
 
-.header-container {
+.header-wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -37,7 +39,6 @@ body {
 }
 
 .nav {
-  font-family: inherit;
   font-size: 14px;
   font-weight: 400;
 }
@@ -45,14 +46,13 @@ body {
 .nav-link {
   margin: 0 11px;
   text-decoration: none;
-  color: inherit;
+  color: #202020;
 }
 
 .account {
-  font-family: inherit;
   font-size: 14px;
   font-weight: 400;
-  color: inherit;
+  color: #202020;
   text-decoration: none;
 }
 
@@ -62,7 +62,7 @@ body {
   display: flex;
 }
 
-.hero-container {
+.hero-wrapper {
   display: flex;
   align-items: center;
 }
@@ -132,7 +132,7 @@ body {
   display: flex;
   align-items: center;
   border: none;
-  background-color: inherit;
+  background-color: #ffffff;
   cursor: pointer;
 }
 
@@ -176,7 +176,7 @@ body {
   display: flex;
 }
 
-.about-container {
+.about-wrapper {
   display: flex;
   align-items: flex-start;
 }
@@ -187,7 +187,7 @@ body {
 }
 
 .section-title {
-  margin-top: 0;
+  margin: 0;
   font-size: 32px;
   font-weight: 700;
 }
@@ -239,7 +239,7 @@ body {
 
 .author-link {
   text-decoration: none;
-  color: inherit;
+  color: #202020;
   font-size: 16px;
   font-weight: 400;
 }
