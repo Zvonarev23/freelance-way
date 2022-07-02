@@ -78,6 +78,10 @@ body {
   margin-right: 122px;
 }
 
+.image-book {
+  width: 100%;
+}
+
 .sale {
   position: absolute;
   top: 23px;
@@ -131,6 +135,7 @@ body {
 
 .date {
   flex-basis: 38%;
+  margin-bottom: 16px;
 }
 
 .price {
@@ -255,6 +260,10 @@ body {
   font-weight: 700;
 }
 
+.author-text :nth-child(3) {
+  display: none;
+}
+
 .author-link {
   text-decoration: none;
   color: #202020;
@@ -268,7 +277,7 @@ body {
 }
 
 .readers {
-  padding-top: 57px;
+  padding-top: 87px;
   padding-bottom: 109px;
 }
 
@@ -276,10 +285,15 @@ body {
   margin-bottom: 57px;
 }
 
-.readers-photos {
+.readers-top {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
+}
+
+.readers-bottom {
+  display: flex;
+  justify-content: space-between;
 }
 
 .photo {
@@ -306,6 +320,7 @@ body {
 .footer-title {
   font-size: 18px;
   font-weight: 700;
+  margin: 0;
   margin-bottom: 30px;
 }
 
@@ -348,4 +363,442 @@ body {
   width: 20px;
   height: 20px;
   transform: rotate(90deg);
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .hero {
+    padding-bottom: 90px;
+  }
+
+  .hero-image {
+    margin-right: 29px;
+    min-width: 390px;
+    max-width: 390px;
+  }
+
+  .about-text {
+    margin-right: 52px;
+    max-width: 367px;
+  }
+
+  .photo {
+    width: 139px;
+    height: 139px;
+  }
+
+  .readers {
+    padding-top: 69px;
+    padding-bottom: 94px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 761px;
+  }
+
+  .hero {
+    padding-top: 59px;
+    padding-bottom: 79px;
+  }
+
+  .hero-image {
+    margin-right: 30px;
+    max-width: 298px;
+    min-width: 298px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .author {
+    font-size: 22px;
+    margin-bottom: 13px;
+  }
+
+  .title {
+    font-size: 46px;
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    margin-bottom: 28px;
+  }
+
+  .description {
+    margin-bottom: 25px;
+  }
+
+  .type {
+    flex-basis: 45%;
+  }
+
+  .date {
+    flex-basis: 45%;
+  }
+
+  .price {
+    margin-bottom: 25px;
+  }
+
+  .button-read {
+    width: 200px;
+    height: 48px;
+    font-size: 14px;
+    margin-right: 14px;
+  }
+
+  .button-buy {
+    width: 200px;
+    height: 48px;
+    font-size: 14px;
+  }
+
+  .about-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .about {
+    padding-top: 81px;
+    padding-bottom: 82px;
+  }
+
+  .about-text {
+    margin: 0;
+    margin-bottom: 62px;
+    min-width: 100%;
+  }
+
+  .title-about {
+    margin-bottom: 29px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .readers {
+    padding-top: 74px;
+    padding-bottom: 81px;
+  }
+
+  .readers-top img:nth-child(n + 5) {
+    display: none;
+  }
+
+  .readers-bottom img:nth-child(n + 5) {
+    display: none;
+  }
+
+  .photo {
+    width: 165px;
+    height: 165px;
+  }
+
+  .readers-top {
+    margin-bottom: 30px;
+  }
+
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 92px;
+  }
+
+  .footer-wrapper {
+    flex-wrap: nowrap;
+  }
+
+  .requisites {
+    margin-right: 60px;
+  }
+
+  .information {
+    margin-right: 60px;
+  }
+
+  .return {
+    width: 40px;
+    height: 40px;
+    bottom: 90px;
+    right: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 560px;
+  }
+
+  .hero {
+    padding-top: 40px;
+  }
+
+  .hero-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .hero-image {
+    min-width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .about-text {
+    margin-bottom: 70px;
+  }
+
+  .about {
+    padding-bottom: 89px;
+  }
+
+  .readers {
+    padding-top: 80px;
+    padding-bottom: 85px;
+  }
+
+  .readers-top img:nth-child(n + 4) {
+    display: none;
+  }
+
+  .readers-bottom img:nth-child(n + 4) {
+    display: none;
+  }
+
+  .footer-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    padding-bottom: 78px;
+  }
+
+  .information {
+    margin: 0;
+  }
+
+  .requisites {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 481px;
+  }
+
+  .hero {
+    padding-bottom: 64px;
+  }
+
+  .info {
+    min-width: 100%;
+  }
+
+  .author {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .title {
+    font-size: 36px;
+    margin-bottom: 19px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    margin-bottom: 31px;
+  }
+
+  .description {
+    flex-direction: column;
+    margin-bottom: 36px;
+  }
+
+  .description-text {
+    margin-bottom: 19px;
+  }
+
+  .age {
+    margin: 0;
+  }
+
+  .price {
+    margin-bottom: 36px;
+  }
+
+  .cost {
+    margin-right: 28px;
+  }
+
+  .add {
+    display: none;
+  }
+
+  .button-read {
+    width: 481px;
+    height: 77px;
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .button-buy {
+    width: 481px;
+    height: 77px;
+    font-size: 16px;
+  }
+
+  .about {
+    padding-top: 60px;
+    padding-bottom: 97px;
+  }
+
+  .title-about {
+    margin-bottom: 35px;
+  }
+
+  .author-text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .author-text :nth-child(2) {
+    display: none;
+  }
+
+  .author-text :nth-child(3) {
+    display: contents;
+  }
+
+  .author-avatar {
+    width: 66px;
+    height: 66px;
+    margin-right: 16px;
+  }
+
+  .author-link {
+    font-size: 14px;
+  }
+
+  .author-bio {
+    font-size: 14px;
+  }
+
+  .readers {
+    padding-top: 55px;
+    padding-bottom: 69px;
+  }
+
+  .title-readers {
+    margin-bottom: 43px;
+  }
+
+  .photo {
+    width: 144px;
+    height: 144px;
+  }
+
+  .footer {
+    padding: 60px 0;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+  }
+
+  .requisites,
+  .information {
+    margin: 0;
+    margin-bottom: 21px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    max-width: 85%;
+  }
+
+  .hero {
+    padding-top: 15%;
+    padding-bottom: 19%;
+  }
+
+  .hero-image {
+    margin-bottom: 14%;
+  }
+
+  .author {
+    font-size: 16px;
+    margin-bottom: 5%;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 3.5%;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 13%;
+  }
+
+  .description {
+    margin-bottom: 13%;
+  }
+
+  .description-text {
+    font-size: 14px;
+    margin-bottom: 6.5%;
+  }
+
+  .age {
+    margin: 0;
+  }
+
+  .button-read {
+    width: 100%;
+    padding: 7% 20%;
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 6%;
+  }
+
+  .button-buy {
+    width: 100%;
+    padding: 7% 24%;
+    font-size: 16px;
+  }
+
+  .about {
+    padding-bottom: 12%;
+  }
+
+  .about-text {
+    margin-bottom: 10%;
+  }
+
+  .about-author {
+    padding: 8% 5%;
+  }
+
+  .readers-top img:nth-child(n + 3) {
+    display: none;
+  }
+
+  .readers-bottom img:nth-child(n + 3) {
+    display: none;
+  }
+
+  .photo {
+    width: 45%;
+    height: 45%;
+  }
+
+  .readers {
+    padding: 15% 0;
+  }
 }
